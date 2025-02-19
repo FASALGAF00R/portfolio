@@ -20,29 +20,32 @@ function Projects() {
                             key={index}
                             className="p-5"
                         >
-                            <Card
-                                shadow={false}
-                                className="relative grid h-[20rem] special-shadow w-full max-w-[28rem] items-end justify-center overflow-hidden text-center"
-                            >
-                                <CardHeader
-                                    floated={false}
+                            <a href={section.link} target="_blank" rel="noopener noreferrer">
+
+                                <Card
                                     shadow={false}
-                                    color="transparent"
-                                    className="absolute inset-0 m-0 h-full w-full bg-no-repeat bg-cover rounded-none"
-                                    style={{ backgroundImage: `url(${section.image})` }}  >
-                                    <div className="to-bg-black-10 absolute inset-0 h-full w-full bg-gradient-to-t from-black/80 via-black/50" />
-                                </CardHeader>
-                                <CardBody className="relative py-14 px-6 md:px-12">
-                                    <h3
-                                        className="text-2xl text-white pb-2"
-                                    >
-                                        {section.title}
-                                    </h3>
-                                    <p className="mb-4 text-gray-400">
-                                        T{section.description}
-                                    </p>
-                                </CardBody>
-                            </Card>
+                                    className="relative grid h-[20rem] special-shadow w-full max-w-[28rem] items-end justify-center overflow-hidden text-center"
+                                >
+                                    <CardHeader
+                                        floated={false}
+                                        shadow={false}
+                                        color="transparent"
+                                        className="absolute inset-0 m-0 h-full w-full bg-no-repeat bg-cover rounded-none"
+                                        style={{ backgroundImage: `url(${section.image})` }}  >
+                                        <div className="to-bg-black-10 absolute inset-0 h-full w-full bg-gradient-to-t from-black/80 via-black/50" />
+                                    </CardHeader>
+                                    <CardBody className="relative py-14 px-6 md:px-12">
+                                        <h3
+                                            className="text-2xl text-white pb-2"
+                                        >
+                                            {section.title}
+                                        </h3>
+                                        <p className="mb-4 text-gray-400">
+                                            {section.description}
+                                        </p>
+                                    </CardBody>
+                                </Card>
+                            </a>
                         </div>
                     ))}
                 </Slider>
