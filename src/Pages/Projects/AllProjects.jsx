@@ -1,7 +1,13 @@
 import portfolio from '../../../assets/Portfolio.png'
-
+import Screenshot from '../../../assets/Screenshot.png'
 
 export const ProjectsData = [
+    {
+        title: "evoc Website",
+        description: "A showcase of my skills in html and css.",
+        image: Screenshot,
+        link:"https://html-rkf1.onrender.com/"
+    },
     {
         title: "Portfolio Website",
         description: "A showcase of my projects, skills, and experience.",
