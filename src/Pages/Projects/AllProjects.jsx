@@ -1,6 +1,6 @@
 import portfolio from '../../../assets/Portfolio.png'
 import Screenshot from '../../../assets/Screenshot.png'
-
+import tech from '../../../assets/tech.png'
 export const ProjectsData = [
     {
         title: "evoc Website",
@@ -35,4 +35,14 @@ export const ProjectsData = [
         link:"https://olx-two.vercel.app/"
 
     },
+    {
+        title: "Tech",
+        description: "static site.",
+        image: tech,
+        link:"https://tech-site-1.vercel.app/"
+
+    },
+
+
+
 ];
